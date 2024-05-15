@@ -1,14 +1,27 @@
 {
   "name": "summerpress",
+  "description": "Fastify Decorators Based Utilities",
+  "author": "Tannatee Juchan <ju.tannatee2543@gmail.com>",
   "version": "1.0.0",
+
   "main": "./dist/App.js",
   "types": "./dist/App.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teelyjc/SummerPress.git"
+  },
+  "keywords": [
+    "utilities"
+  ],
+  "bugs": {
+    "url": "https://github.com/teelyjc/SummerPress/issues"
+  },
+  "homepage": "https://github.com/teelyjc/SummerPress#readme",
   "scripts": {
     "dev": "tsx watch src/App.ts",
     "build": "tsc && tsc-alias",
     "clean": "rimraf dist"
   },
-  "author": "Tannatee Juchan <ju.tannatee2543@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.12.5",
