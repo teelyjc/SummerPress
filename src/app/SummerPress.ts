@@ -20,15 +20,16 @@ export class SummerPress {
       constructor
     );
 
-    routers.map(({ method, path, handler }) => {
-      const defaultPath = `${group}${path}`.replace(/^\/+|\/+$/g, "");
+    routers &&
+      routers.map(({ method, path, handler }) => {
+        const defaultPath = `${group}${path}`.replace(/^\/+|\/+$/g, "");
 
-      this.server.route({
-        method,
-        url: `/${defaultPath}`,
-        handler: controller[handler].bind(this),
+        this.server.route({
+          method,
+          url: `/${defaultPath}`,
+          handler: controller[handler].bind(this),
+        });
       });
-    });
   }
 
   public run(options: FastifyListenOptions): void {
