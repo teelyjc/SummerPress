@@ -2,7 +2,7 @@
   "name": "summerpress",
   "description": "Fastify Decorators Based Utilities",
   "author": "Tannatee Juchan <ju.tannatee2543@gmail.com>",
-  "version": "1.0.1",
+  "version": "1.0.2",
 
   "main": "./dist/App.js",
   "types": "./dist/App.d.ts",
